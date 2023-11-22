@@ -1,0 +1,72 @@
+.overlayBox {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d4; 
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .flexbox {
+        position: relative;
+        width: 296px;
+        height: 324px;
+        background: var(--color-grey-3);
+        border-radius: 4px;
+        
+        .head {
+            height: 57px;
+            flex-shrink: 0;
+            border-radius: 8px 8px 0px 0px;
+            background: var(--color-grey-2);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &>h2 {
+                margin: 14px 0px 15px 14px;
+            }
+
+            &>button {
+                margin: 16px 17px 15px 0px;
+            }
+        }
+
+        .input, .select {
+            width: 264px;
+            height: 84px;
+            padding: 6.51px;
+            margin: 0px 13.69px 0px 17.65px;
+        }
+
+        &>button{
+            width: 249px;
+            margin: 31.65px 17.65px 25.67px 23.65px;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .overlayBox {
+
+        .flexbox {
+            position: relative;
+            width: 396px;
+            height: 342px;
+
+            .input, .select {
+                width: 359px;
+                height: 105px;
+                margin: 0px 13.69px -13px 17.65px;
+            }
+    
+            &>button{
+                width: 344px;
+            }
+        }
+    }
+}

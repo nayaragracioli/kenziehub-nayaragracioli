@@ -4,7 +4,7 @@ import hubKenzieIcon from "../../assets/Kenzie Hub.svg";
 import loginStyle from "./style.module.scss"; 
 
 
-export const LoginPage = ({ setUser }) => {
+export const LoginPage = () => {
     return (
         <>
             <header className={loginStyle.loginbox}>
@@ -13,7 +13,7 @@ export const LoginPage = ({ setUser }) => {
             <main className={`${pagesStyle.pageBox}`}>
                 <div className="container sm">
                     <div>
-                        <LoginForm setUser={setUser} />
+                        <LoginForm />
                     </div>
                 </div>
             </main>

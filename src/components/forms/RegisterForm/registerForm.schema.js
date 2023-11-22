@@ -18,5 +18,3 @@ export const registerFormSchema = z.object({
     message: "As senhas não correspondem.",
     path: ["confirmPassword"],
 });
-
-

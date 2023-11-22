@@ -4,39 +4,23 @@ import Select from "../Select";
 import InputPassword from "../InputPassword";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { registerFormSchema } from "./registerForm.schema";
-import { api } from "../../../services/api";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
 import Style from "./style.module.scss";
-import { toast } from "react-toastify";
+import { UserContext } from "../../../providers/UserContext";
 
 
 export const RegisterForm = () => {
     const [loading, setLoading] = useState(false);
     const [isHidden, setIsHidden] = useState(true);
-    const navigate = useNavigate();
+
+    const {userRegister} = useContext(UserContext);
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: zodResolver(registerFormSchema)
     });
 
-    const userRegister = async (payLoad) => {
-        try {
-            setLoading(true);
-            await api.post("/users", payLoad);
-            navigate("/")
-            toast.success("Cadastro feito com sucesso");
-        } catch (error) {
-            if (error.response?.data.message === "Email already exists") {
-                toast.error("Já existe um usuário com esse e-mail!");
-            }
-        } finally {
-            setLoading(false);
-        }
-    };
-
     const submit = (payLoad) => {
-        userRegister(payLoad);
+        userRegister(payLoad, setLoading);
     };
 
     return (

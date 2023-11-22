@@ -3,8 +3,7 @@
         border: 1px solid var(--color-grey-3);
     }
 
-    .informationUser,
-    .message {
+    .informationUser {
         display: flex;
         width: 100%;
         padding: 12px;
@@ -12,9 +11,7 @@
         justify-content: center;
         align-items: flex-start;
         gap: 10px;
-    }
 
-    .informationUser {
         &>h2 {
             margin: 34.5px 158px 10px 13px;
         }
@@ -25,20 +22,53 @@
 
     }
 
-    .message {
+    .tech {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
         width: 100%;
 
-        &>h2 {
-            margin: 24px 158px 10px 13px;
+        &>button {
+            cursor: pointer;
+            background-color: var(--color-grey-3);
+            border-radius: 2px;
+            padding: 3px;
         }
 
-        &>h3 {
-            margin: 0px 158px 10px 13px;
+    }
+
+    &>section {
+        background-color: var(--color-grey-3);
+        width: 86%;
+        height: 358px;
+        padding: 10px;
+        margin: 0px 14px 75px 12px;
+        border-radius: 4px;
+
+        margin-left: 27px;
+
+    }
+}
+
+@media(min-width: 546px) {
+    .dashboardbox{
+        &>section {
+            width: 90%;
         }
     }
 }
 
-
+@media(min-width: 682px) {
+    .dashboardbox{
+        &>section {
+            width: 92%;
+        }
+    }
+}
 
 @media(min-width: 700px) {
     .dashboardbox {
@@ -61,23 +91,24 @@
 
         }
 
-        .message {
+        .tech {
             width: 77%;
-            justify-content: space-between;
             align-items: center;
-            margin-left: 63px;
+            margin-left: 42px;
 
             &>h2 {
-                margin-left: 156px;
                 width: 100%;
             }
 
-            &>h3 {
-                width: 100%;
-                margin: 0px;
+            &>button {
+                margin-right: -53px;
             }
         }
 
+        &>section {
+            width: 76%;
+            margin-left: 72px;
+        }
 
     }
 }
@@ -85,8 +116,17 @@
 @media(min-width: 1024px) {
     .dashboardbox {
 
-        .informationUser,
-        .message {
+        .informationUser {
+            width: 60%;
+            margin-left: 180px;
+        }
+
+        .tech {
+            width: 60%;
+            margin-left: 156px;
+        }
+
+        &>section {
             width: 60%;
             margin-left: 180px;
         }
@@ -96,10 +136,19 @@
 
 @media(min-width: 1440px) {
     .dashboardbox {
-        .informationUser,
-        .message {
+        .informationUser {
             width: 50%;
             margin-left: 332px;
+        }
+
+        .tech {
+            width: 50%;
+            margin-left: 314px;
+        }
+
+        &>section {
+            width: 50%;
+            margin-left: 341px;
         }
     }
 }

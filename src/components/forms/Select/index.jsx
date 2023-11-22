@@ -11,5 +11,3 @@ export default forwardRef (({error, children, label, id, ...rest}, ref) => {
         </div>
     )
 })
-
-
