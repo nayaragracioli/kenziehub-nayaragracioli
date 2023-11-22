@@ -1,0 +1,105 @@
+.dashboardbox {
+    &>hr {
+        border: 1px solid var(--color-grey-3);
+    }
+
+    .informationUser,
+    .message {
+        display: flex;
+        width: 100%;
+        padding: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .informationUser {
+        &>h2 {
+            margin: 34.5px 158px 10px 13px;
+        }
+
+        &>p {
+            margin: 0px 68px 34.5px 13px;
+        }
+
+    }
+
+    .message {
+        width: 100%;
+
+        &>h2 {
+            margin: 24px 158px 10px 13px;
+        }
+
+        &>h3 {
+            margin: 0px 158px 10px 13px;
+        }
+    }
+}
+
+
+
+@media(min-width: 700px) {
+    .dashboardbox {
+        .informationUser {
+            width: 77%;
+            height: 118px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+            margin-left: 63px;
+
+            &>h2 {
+                margin: 0px;
+            }
+
+            &>p {
+                margin: 0px;
+            }
+
+        }
+
+        .message {
+            width: 77%;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 63px;
+
+            &>h2 {
+                margin-left: 156px;
+                width: 100%;
+            }
+
+            &>h3 {
+                width: 100%;
+                margin: 0px;
+            }
+        }
+
+
+    }
+}
+
+@media(min-width: 1024px) {
+    .dashboardbox {
+
+        .informationUser,
+        .message {
+            width: 60%;
+            margin-left: 180px;
+        }
+    }
+}
+
+
+@media(min-width: 1440px) {
+    .dashboardbox {
+        .informationUser,
+        .message {
+            width: 50%;
+            margin-left: 332px;
+        }
+    }
+}

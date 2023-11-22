@@ -1,0 +1,41 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 81px 12px 50.916px 12px;
+
+    &.sm {
+        max-width: 396px;
+        background-color: var(--color-grey-3);
+        border-radius: 8px;
+    }
+
+    &.larger {
+        padding: 0px 12px 50.916px 12px;
+        margin-left: -11px;
+
+        @media(min-width: 324px) {
+            margin-left: -11px;
+        }
+    }
+}
+
+.containerDash{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    &.larger {
+        max-width: 2500px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,31 @@
+.title1 {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    line-height: 1.75rem;
+    letter-spacing: 0em;
+}
+
+.title2 {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+    line-height: 1.625rem;
+    letter-spacing: 0em;
+}
+
+.headline {
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    line-height: 1.375rem;
+    letter-spacing: 0em;
+
+    &.bold {
+        font-weight: var(--font-weight-2);
+    }
+}
+
+.paragraph {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: 1.375rem;
+    letter-spacing: 0em;
+}

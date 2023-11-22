@@ -1,0 +1,35 @@
+:root {
+    --color-primary: #FF577F;
+    --color-primary-hover: #FF427F;
+    --color-primary-negative:#59323F;
+    --color-primary-negative-hover:#865364;
+    
+    --color-grey-0: #F8F9FA;
+    --color-grey-1: #868E96;
+    --color-grey-2: #343B41;
+    --color-grey-3: #212529;
+    --color-grey-4: #121214;
+    --color-white: #FFFFFF;
+
+    --color-sucess: #3FE864;
+    --color-negative: #E83F5B;
+
+    --font-primary: "Inter", sans-serif;
+
+    --font-weight-1: 400;
+    --font-weight-2: 600;
+    --font-weight-3: 700;
+
+    --font-size-1: 12px;
+    --font-size-2: 16px;
+    --font-size-3: 18px;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-0);
+    width: 100vw;
+    height: 100vh;
+}
+

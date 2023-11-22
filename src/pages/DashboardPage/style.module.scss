@@ -1,0 +1,39 @@
+.dashboardpage {
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 22px;
+    margin-right: 15px;
+
+    &>img {
+        width: 97.591px;
+        height: 16.898px;
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media(min-width: 700px){
+    .dashboardpage {
+        width: 77%;
+        margin-left: 71px;
+    }
+}
+
+@media(min-width: 1024px){
+    .dashboardpage {
+        width: 59%;
+        margin-left: 187px;
+    }
+}
+
+@media(min-width: 1440px){
+    .dashboardpage {
+        width: 50%;
+        margin-left: 340px;
+    }
+}

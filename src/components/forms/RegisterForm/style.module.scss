@@ -1,0 +1,35 @@
+.registerbox {
+    display: flex;
+    flex-direction: column;
+
+    & > h1 {
+        margin: -83px 19px -8.17px 52.5px;
+        padding: 33.58px 17.59px;
+    }
+
+    &>p{
+        margin: -2px 19px 13.83px 52.5px;
+    }
+}
+
+@media(min-width: 358px){
+    .registerbox{
+        & > h1 {
+            margin: -83px 19px -8.17px 69.5px;
+        }
+        &>p{
+            margin: -2px 19px 13.83px 69.5px;
+        }
+    }
+}
+
+@media(min-width: 413px){
+    .registerbox{
+        & > h1 {
+            margin: -83px 19px -8.17px 98.5px;
+        }
+        &>p{
+            margin: -2px 19px 13.83px 98.5px;
+        }
+    }
+}

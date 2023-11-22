@@ -1,0 +1,42 @@
+.formbox{
+    display: flex;
+    flex-direction: column;
+
+    & > h1 {
+        margin: -50px 128.5px 22.83px 108.5px;
+    }
+}
+
+@media(min-width: 336px){
+    .formbox{
+        & > h1 {
+            margin: -50px 128.5px 22.83px 115.5px;
+        }
+    }
+}
+
+
+@media(min-width: 369px){
+    .formbox{
+        & > h1 {
+            margin: -50px 128.5px 22.83px 127.5px;
+        }
+    }
+}
+
+@media(min-width: 375px){
+    .formbox{
+        & > h1 {
+            margin: -50px 128.5px 22.83px 139.5px;
+        }
+    }
+}
+
+
+@media(min-width: 438px){
+    .formbox{
+        & > h1 {
+            margin: -50px 128.5px 22.83px 158.5px;
+        }
+    }
+}

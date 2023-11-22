@@ -1,0 +1,86 @@
+%buttonDefaults {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    height: 38px;
+    width: 100%;
+    padding: 0px 22.334px;
+
+    border: 1px solid;
+    border-radius: 4.061px;
+    border: 1.218px solid;
+
+    color: var(--color-white);
+
+    font-size: var(--font-size-2);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.394px;
+
+    transition: 0.4s;
+}
+
+.btnPrimary {
+    @extend %buttonDefaults;
+
+    border: var(--color-primary);
+    background: var(--color-primary);
+
+    margin-bottom: 27.27px;
+    margin-top: 10px;
+
+    &:hover {
+        border: var(--color-primary-hover);
+        background: var(--color-primary-hover);
+    }
+
+    &.smallP {
+        height: 40px;
+        width: 79px;
+        padding: 0px 16.243px;
+    }
+}
+
+.btnNegative {
+    @extend %buttonDefaults;
+
+    border: var(--color-primary-negative);
+    background: var(--color-primary-negative);
+    margin-top: 10px;
+
+    &:hover {
+        border: var(--color-primary-negative-hover);
+        background: var(--color-primary-negative-hover);
+    }
+
+    &.smallN {
+        height: 40px;
+        width: 79px;
+        padding: 0px 16.243px;
+    }
+}
+
+.btnDisable {
+    @extend %buttonDefaults;
+
+    border: var(--color-grey-1);
+    background: var(--color-grey-1);
+
+    margin-top: 17.65px;
+
+    &:hover {
+        border: var(--color-grey-2);
+        background: var(--color-grey-2);
+    }
+
+    &.smallD {
+        height: 40px;
+        width: 79px;
+        padding: 0px 16.243px;
+        border: var(--color-grey-3);
+        background: var(--color-grey-3);
+    }
+}

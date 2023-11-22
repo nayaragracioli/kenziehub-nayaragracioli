@@ -1,0 +1,36 @@
+.registerpage {
+    max-width: 2500px;
+    width: 100vw;
+    height: 122px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+
+    &>img {
+        width: 97.591px;
+        height: 16.898px;
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 368px){
+    .registerpage {
+        gap: 146px;
+    }
+}
+
+@media (min-width: 408px){
+    .registerpage {
+        gap: 186px;
+    }
+}
+
+@media (min-width: 418px){
+    .registerpage {
+        gap: 211px;
+    }
+}
