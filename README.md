@@ -7,5 +7,10 @@ Esse projeto foi desenvolvido em React e pude fazer o uso de novas bibliotecas, 
 
 Para conectar o Zod com o React Hook Form, foi utilizado o @hookform/resolvers. E para trabalhar com a API, fiz o uso do Axios!
 
+Além disso:
+- Possui uma autenticação completa utilizando do ContextAPI;
+- E implementei o CRUD (Create, Read, Update e Delete) para a seção de Tecnologias.
+
+
 A estilização foi feita utilizando o SASS, implementei também o Toastify para ter um aspecto mais bonito quando há alguma notificação.
 O Kenzie Hub é um projeto Responsivo, então ele adapta-se a diferentes tamanhos de tela!
